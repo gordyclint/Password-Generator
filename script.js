@@ -19,3 +19,18 @@ function generate(){
 
 }
 
+// Copy to Clipboard
+function copyClipboard(){
+
+    //Get result to clipboard
+    var copyText = document.getElementById('exampleFormControlTextarea1');
+
+    // Select text field
+    copyText.select();
+
+    // Copy text in text field
+    document.execCommand('copy');
+
+    // Alert Copied text
+    alert("Copied you password to clipboard :)");
+}
